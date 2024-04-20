@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo 5</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            font: large 30pt Arial;
+        }
+    </style>
+</head>
+<body>
+       <h1>Como vai?</h1>
+       <p>Você vai bem?</p>
+       <p>Eu espero que sim</p>
+       <div id="fala">Dê o seu melhor!</div>  
+       <script>
+
+        //acessando as informações de 'p'
+        var pnome = document.getElementsByTagName('p')[0] 
+        document.write(pnome.innerText)
+        pnome.style.color = 'red'
+
+        /* acessando as informações de div em ID
+        var d = document.getElementById('fala')
+        d.style.color = 'orange'
+        d.innerText = 'Pois eu estou dando o meu melhor!'
+        */
+
+        // acessando as informações de div em Selector
+        var d = document.querySelector('div#fala')
+        d.style.color = 'orange'
+        d.innerText = 'Estou dando o meu melhor!'
+
+       </script>
+</body>
+</html>

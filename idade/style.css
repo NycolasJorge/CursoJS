@@ -1,0 +1,27 @@
+body{
+    background-color: cadetblue;
+    color: white;
+    font: normal 13pt Arial;
+}
+header{
+    text-align: center;
+}
+section{
+    background-color: white;
+    padding: 18px;
+    width: 450px;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 3px 3px 18px rgb(87, 87, 87);
+    color: black;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font: italic 13pt Arial;
+    padding: 8px;
+}
+div{
+    padding: 8px;
+    text-align: center;
+}

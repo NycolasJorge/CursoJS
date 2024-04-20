@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo 9</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 13pt Arial;
+        }
+        div{
+            height: 30px;
+        }
+        div#msg{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <H1>Quilometragem</H1>
+    <div>Qual a sua velocidade?</div>
+    <input type="number" name="txtn1" id="txtn1"> km/h
+    <input type="button" value="Verificar" . onclick="Verificar()">
+    <div id="msg">Resultado:</div>
+    <script>
+        var n1 = document.getElementById('txtn1')
+        var ver = document.getElementById('msg')
+        function Verificar(){
+            if(n1.value > 100){
+                ver.innerHTML = 'Você está <strong>multado'
+            }else{
+                ver.innerHTML = 'Você está andando conforme os parâmetros'
+            }
+        }
+    </script>
+</body>
+</html>

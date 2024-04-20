@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo 7</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(34, 226, 9);
+            font: normal 30pt Arial;
+        }
+        div{
+            background-color: white;
+            color: black;
+            font: italic 40pt Arial;
+            height: 300px;
+            width: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="botão">Clique aqui</div>
+    <script>
+        var b = document.getElementById('botão')
+        b.addEventListener('mouseenter', Entrou)
+        b.addEventListener('mouseout', Saiu)
+        b.addEventListener('click', Clicou)
+        b.addEventListener('mousedown', Segurou) 
+
+        function Entrou() {
+            b.innerText = 'Entrou'
+        }
+        function Saiu() {
+            b.innerText = 'Saiu'
+        }
+        function Clicou() {
+            b.innerText = 'Clicou'
+        }
+        function Segurou() {
+            b.innerText = 'Segurou'
+        }
+            
+
+    </script>
+</body>
+</html>
